@@ -1,4 +1,4 @@
-![about](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/0c0c29b8-65f4-4ca7-a80a-bc3809d4c7e6)![home](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/b8eec35d-5f15-4fe8-bfad-760d626abd14)
+
 # DNBC News
 
 It is static and simple-website-News using languages like HTML , CSS , JavaScript and Jquery i mostly using html for make and make this project look attractive and Beautiful
@@ -29,21 +29,21 @@ It is static and simple-website-News using languages like HTML , CSS , JavaScrip
 - Daily Update
 - Subscription for Advance Feature
 ## Demo
-- Home Page
+- ## Home Page
 ![home](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/3f229e14-26b4-4394-adc0-af83adf215b5)
-- About Page
+- ## About Page
 ![about](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/523420ee-d5a4-47ce-863d-3089a6cb6643)  
-- Latest News
+- ## Latest News
 ![latestnews](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/fa65eddd-121d-4208-9062-c3d3a8ac016b)
-- Bussiness News
+- ## Bussiness News
   ![bussiness](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/216034a6-bf48-4b02-957b-e498d1a559ef)
-- Politics News
+- ## Politics News
   ![politics](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/597bbf23-376f-4c20-8687-4e7a1ae838c1)
-- Sports News
+- ## Sports News
   ![sport](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/23b7d822-b285-42ad-ad3f-081622776b19)
-- Contact Page
+- ## Contact Page
   ![contACT](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/d34bdab6-9837-4021-b33e-21d6a7690621)
-- FeedBack
+- ## FeedBack
   ![feedback](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/3494aa91-0521-458d-b654-a87186f5a605)
-- Signin
+- ## Signin
   ![sigin](https://github.com/ZehraKazmii/Eproject-News-website/assets/162803612/16fe7b92-f500-4b12-a6b3-9613f11c3319)
