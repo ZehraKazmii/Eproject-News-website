@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../inner-style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-expand-ms nav1">
+      <a href="#" class="navbar-brand  logo text-white">
+        <img src="../gellery/logo.png" alt="">
+      </a>
+      <a class="signin" href=""><i class="fa-solid fa-user"></i> Sign in</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn" aria-controls="btn"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="navline"></div>
+      <div class="collapse navbar-collapse mx-5 mx-5 navmenu1 " id="btn">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link text-dark px-3 navitem1" style="margin-left: 20px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link text-dark px-3 navitem2">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../about.html" class="nav-link text-dark px-3 navitem3 ">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../contact.html" class="nav-link text-dark px-3 navitem4">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../feedback.html" class="nav-link text-dark px-3 navitem6">FeedBack</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../faq.html" class="nav-link text-dark px-3 navitem5">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <input class="form-control search" type="text" placeholder="Search" aria-label="Disabled input example" disabled>
+          </li>
+          <li class="nav-item">
+            <span class="bell bell-btn"><i class="fa fa-bell bellicon" aria-hidden="true"></i></span> 
+          </li>
+           
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md nav2">
+      <a href="#" class="navbar-brand news-logo text-white">NEWS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a href="../business.html" class="nav-link text-white navmenu2 navitem ">Bussiness</a>
+          </li>
+          <li class="nav-item">
+            <a href="../latestnews.html" class="nav-link text-white navmenu2 navitem">Today in the World</a>
+          </li>
+          <li class="nav-item">
+            <a href="../sport.html" class="nav-link text-white navmenu2 navitem">Sport</a>
+          </li>
+          <li class="nav-item">
+            <a href="../entertainment.html" class="nav-link text-white navmenu2 navitem ">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a href="../politics.html" class="nav-link text-white navmenu2 navitem ">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city1.html" class="nav-link text-white navmenu2 navitem ">Tokyo</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city5.html" class="nav-link text-white navmenu2 navitem ">England</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city3.html" class="nav-link text-white navmenu2 navitem ">Paris</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city4.html" class="nav-link text-white navmenu2 navitem ">Shanghai</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city2.html" class="nav-link text-white navmenu2 navitem ">Sao Paulo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <main>
+      <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+      <span class="close-btn material-symbols-rounded">X</span>
+      <div class="subscontainer">
+        <div class="subsmain-card">
+          <input type="checkbox" id="chk1" aria-hidden="true">
+
+          <div class="plane">
+            <label class="subtittle" for="chk1" aria-hidden="true">BASIC</label>
+            <div class="dealrow">
+              <div class="price-details">
+                <span class="price">$19</span>
+              </div>
+              <ul class="subfeatures">
+                <li><i class="fas fa-check"></i><span>100 GB Premium Bandwidth</span></li>
+                <li><i class="fas fa-check"></i><span>FREE 50+ Installation Scripts</span></li>
+                <li><i class="fas fa-check"></i><span>One FREE Domain Registration </span></li>
+                <li><i class="fas fa-check"></i><span>Unlimited Email Accounts </span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment">
+            <form class="subsform" id="subscript">
+              <label class="pay" for="chk1" aria-hidden="true">Subscribe</label>
+              <input class="subsinput" type="text" name="cardholder" placeholder="Cardholder Name" required>
+              <input class="subsinput" type="text" name="cardnumber" placeholder="Card Number" required>
+              <input class="subsinput" type="date" name="expirydate" placeholder="Expiry Date" required>
+              <input class="purchase" type="submit" name="submit" value="Purchase">
+            </form>
+          </div>
+        </div>
+        <div class="subsmain-card">
+          <input type="checkbox" id="chk2" aria-hidden="true">
+
+          <div class="plane">
+            <label class="subtittle" for="chk2" aria-hidden="true">PREMIUM</label>
+            <div class="dealrow">
+              <div class="price-details">
+                <span class="price">$29</span>
+              </div>
+              <ul class="subfeatures">
+                <li><i class="fas fa-check"></i><span>Unlimited GB Premium </span></li>
+                <li><i class="fas fa-check"></i><span>FREE 200+ Installation Scripts </span></li>
+                <li><i class="fas fa-check"></i><span>Five FREE Domain Registration</span></li>
+                <li><i class="fas fa-check"></i><span>Unlimited Email Accounts </span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment">
+            <form class="subsform" id="subscript">
+              <label class="pay" for="chk2" aria-hidden="true">Subscribe</label>
+              <input class="subsinput" type="text" name="cardholder" placeholder="Cardholder Name" required>
+              <input class="subsinput" type="text" name="cardnumber" placeholder="Card Number" required>
+              <input class="subsinput" type="date" name="expirydate" placeholder="Expiry Date" required>
+              <input class="purchase" type="submit" name="submit" value="Purchase">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+        <section class="section-padding">
+            <div class="innerpage-container">
+                <div class="innerpage-info">
+                    <div class="innerpage-head">
+                        <h2>Disposable vapes to be banned for children's health, government says</h2>
+                        <span class="time"><i class="fa-regular fa-clock clock "></i>3 days ago</span>
+                    </div>
+                    <figure class="figure">
+                        <img src="../gellery/business.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption">Disposable vapes to be banned for children's health
+                        </figcaption>
+                    </figure>
+
+                    <div class="innerpage-text">
+                        <h4>Disposable vapes are set to be banned as part of plans to tackle the rising number of young
+                            people taking up vaping, the government says.</h4>
+                        <p>Measures will also be introduced to prevent vapes being marketed at children and to target
+                            under-age sales.</p>
+                        <p>It is already illegal to sell any vape to anyone under 18, but disposable vapes - often sold
+                            in smaller, more colourful packaging than refillable ones - are a "key driver behind the
+                            alarming rise in youth vaping", according to the governmen.</p>
+                        <p>Announcing the plans on Monday, Mr Sunak said it was right that "strong action" was taken to
+                            stamp out vaping in children.</p>
+                        <p> "Children shouldn't be vaping, we don't want them to get addicted, we still don't understand
+                            the full long-term health impacts," he said</p>
+                        <p>Mr Sunak suggested the proposals struck the right balance between restricting access for
+                            children and maintaining access for adult smokers trying to quit smoking.</p>
+                        <p>Vaping is substantially less harmful than smoking, but it has not been around for long enough
+                            for its long-term risks to be known, according to the NHS. .</p>
+                        <P>The vapour that is inhaled can still contain small amounts of chemicals that are found in
+                            cigarettes, including nicotine - which is addictive but not seen by the health service as
+                            one of the most problematic ingredients in cigarettes.</P>
+                    </div>
+                </div>
+                <div class="innerpage-card">
+                    <h4>Top Stories</h4>
+                    <div class="innerpage-sidecard">
+                        <div class="side-cards">
+                            <div class="card">
+                                <a href="business36.html"><img src="../gellery/busines36.jpg" class="card-img-top " alt="..."></a>
+                                <div class=" side-text card-body">
+                                    <p class="card-text"><a class="homebusi-text" href="business36.html">Can vaccines help India triumph over tuberculosis?
+                                      </a></p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <a href="business37.html"><img src="../gellery/busines37.jpg" class="card-img-top" alt="..."></a>
+                                <div class=" side-text card-body">
+                                    <p class="card-text"><a class="homebusi-text" href="business37.html">Saltburn actor Jacob Elordi accused of grabbing reporter's throat
+                                  .</a></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="business38.html"><img src="../gellery/busines38.jpg" class="card-img-top" alt="..."></a>
+                                <div class=" side-text card-body">
+                                    <p class="card-text"><a class="homebusi-text" href="business38.html">Huge atom-smasher bid to find missing 95% of Universe
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="business39.html"><img src="../gellery/busines39.jpg" class="card-img-top" alt="..."></a>
+                                <div class=" side-text card-body">
+                                    <p class="card-text"><a class="homebusi-text" href="business39.html">Should more British homes be built using straw? </a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row foot">
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box  ">
+                <h2 class="mb-3">Explore the DNBC</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam repellendus sunt
+                  praesentium
+                  aspernatur iure molestias.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box mx-5">
+                <h2>World</h2>
+                <ul>
+                  <li><a href="../city4.html">China</a></li>
+                  <li><a href="../latestnews.html">Asia</a></li>
+                  <li><a href="../city3.html">Europe</a></li>
+                  <li><a href="../city5.html">United Kingdom</a></li>
+                  <li><a href="../city2.html">America</a></li>
+                  <li><a href="../city1.html">Middle East</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box ">
+                <h2>DNBC Details</h2>
+                <ul>
+                  <li><a href="../../about.html">About us</a></li>
+                  <li><a href="../../faq.html">FAQ</a></li>
+                  <li><a href="../../index.html">Home</a></li>
+                  <li><a href="../../index.html">News</a></li>
+                  <li><a href="../../feedback.html">Feedback</a></li>
+                  <li><a href="../../contact.html">Contact us</a></li>
+  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box ">
+                <h2>Join Us</h2>
+                <button type="button" class="btn mt-4 watch px-3">
+                  <a href="">Watch TV Here</a>
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright © 2024 DNBC. The DNBC is not responsible for the content of external sites
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

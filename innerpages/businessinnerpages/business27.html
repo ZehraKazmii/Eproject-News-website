@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../inner-style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-expand-ms nav1">
+      <a href="#" class="navbar-brand  logo text-white">
+        <img src="../gellery/logo.png" alt="">
+      </a>
+      <a class="signin" href=""><i class="fa-solid fa-user"></i> Sign in</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn" aria-controls="btn"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="navline"></div>
+      <div class="collapse navbar-collapse mx-5 mx-5 navmenu1 " id="btn">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link text-dark px-3 navitem1" style="margin-left: 20px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link text-dark px-3 navitem2">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../about.html" class="nav-link text-dark px-3 navitem3 ">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../contact.html" class="nav-link text-dark px-3 navitem4">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../feedback.html" class="nav-link text-dark px-3 navitem6">FeedBack</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../faq.html" class="nav-link text-dark px-3 navitem5">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <input class="form-control search" type="text" placeholder="Search" aria-label="Disabled input example" disabled>
+          </li>
+          <li class="nav-item">
+            <span class="bell bell-btn"><i class="fa fa-bell bellicon" aria-hidden="true"></i></span> 
+          </li>
+           
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md nav2">
+      <a href="#" class="navbar-brand news-logo text-white">NEWS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a href="../business.html" class="nav-link text-white navmenu2 navitem ">Bussiness</a>
+          </li>
+          <li class="nav-item">
+            <a href="../latestnews.html" class="nav-link text-white navmenu2 navitem">Today in the World</a>
+          </li>
+          <li class="nav-item">
+            <a href="../sport.html" class="nav-link text-white navmenu2 navitem">Sport</a>
+          </li>
+          <li class="nav-item">
+            <a href="../entertainment.html" class="nav-link text-white navmenu2 navitem ">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a href="../politics.html" class="nav-link text-white navmenu2 navitem ">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city1.html" class="nav-link text-white navmenu2 navitem ">Tokyo</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city5.html" class="nav-link text-white navmenu2 navitem ">England</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city3.html" class="nav-link text-white navmenu2 navitem ">Paris</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city4.html" class="nav-link text-white navmenu2 navitem ">Shanghai</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city2.html" class="nav-link text-white navmenu2 navitem ">Sao Paulo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <main>
+      <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+      <span class="close-btn material-symbols-rounded">X</span>
+      <div class="subscontainer">
+        <div class="subsmain-card">
+          <input type="checkbox" id="chk1" aria-hidden="true">
+
+          <div class="plane">
+            <label class="subtittle" for="chk1" aria-hidden="true">BASIC</label>
+            <div class="dealrow">
+              <div class="price-details">
+                <span class="price">$19</span>
+              </div>
+              <ul class="subfeatures">
+                <li><i class="fas fa-check"></i><span>100 GB Premium Bandwidth</span></li>
+                <li><i class="fas fa-check"></i><span>FREE 50+ Installation Scripts</span></li>
+                <li><i class="fas fa-check"></i><span>One FREE Domain Registration </span></li>
+                <li><i class="fas fa-check"></i><span>Unlimited Email Accounts </span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment">
+            <form class="subsform" id="subscript">
+              <label class="pay" for="chk1" aria-hidden="true">Subscribe</label>
+              <input class="subsinput" type="text" name="cardholder" placeholder="Cardholder Name" required>
+              <input class="subsinput" type="text" name="cardnumber" placeholder="Card Number" required>
+              <input class="subsinput" type="date" name="expirydate" placeholder="Expiry Date" required>
+              <input class="purchase" type="submit" name="submit" value="Purchase">
+            </form>
+          </div>
+        </div>
+        <div class="subsmain-card">
+          <input type="checkbox" id="chk2" aria-hidden="true">
+
+          <div class="plane">
+            <label class="subtittle" for="chk2" aria-hidden="true">PREMIUM</label>
+            <div class="dealrow">
+              <div class="price-details">
+                <span class="price">$29</span>
+              </div>
+              <ul class="subfeatures">
+                <li><i class="fas fa-check"></i><span>Unlimited GB Premium </span></li>
+                <li><i class="fas fa-check"></i><span>FREE 200+ Installation Scripts </span></li>
+                <li><i class="fas fa-check"></i><span>Five FREE Domain Registration</span></li>
+                <li><i class="fas fa-check"></i><span>Unlimited Email Accounts </span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment">
+            <form class="subsform" id="subscript">
+              <label class="pay" for="chk2" aria-hidden="true">Subscribe</label>
+              <input class="subsinput" type="text" name="cardholder" placeholder="Cardholder Name" required>
+              <input class="subsinput" type="text" name="cardnumber" placeholder="Card Number" required>
+              <input class="subsinput" type="date" name="expirydate" placeholder="Expiry Date" required>
+              <input class="purchase" type="submit" name="submit" value="Purchase">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+        <section class="section-padding">
+            <div class="innerpage-container">
+                <div class="innerpage-info">
+                    <div class="innerpage-head">
+                        <h2>Russian oil getting into UK via refinery loophole, reports claim</h2>
+                        <span><i class="fa-regular fa-clock"></i>3 hours ago</span>
+                    </div>
+                    <figure class="figure">
+                        <img src="../gellery/busines27.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption">Millions of barrels of fuel made from Russian oil are still being imported to the UK 
+                        </figcaption>
+                    </figure>
+                    <div class="innerpage-text">
+                        <h4>Millions of barrels of fuel made from Russian oil are still being imported to the UK despite sanctions imposed over the war in Ukraine, research claims.</h4>
+                        <p>A so-called "loophole" means Russian crude is refined in countries such as India and the products sold to the UK.
+
+                            This is not illegal and does not breach the UK's Russian oil ban, but critics say it undermines sanctions aimed at restricting Russia's war funds.
+                            
+                            The UK government denied there had been any imports of Russian oil since 2022.
+                            
+                            But a spokesman said internationally recognised "rules of origin" define that crude, once refined in another country, is classed for the purposes of trade as originating from the refining country.</p>
+                            <P>
+                                In a separate research paper, campaign group Global Witness estimated that throughout 2023, some 5.2 million barrels of refined petroleum products that had been produced from Russian crude oil were imported to the UK.
+
+Most of the fuel imported - 4.6 million barrels - was jet fuel, which the group's researchers suggested was used in one in 20 UK flights.
+
+Lela Stanley, campaign lead for the Ukraine team at Global Witness, said while "the UK government falls over itself to decry the war in Ukraine, it remains complicit in the sale of Russian oil by keeping this refining loophole open".
+
+"Every single pound spent on Russian oil helps Putin pay for his brutal war," she added.
+
+The exclusive figures shared with the BBC from CREA estimated that during the first 12 months of the Russian oil ban from December 2022, some £569m worth of oil products imported by the UK were derived from Russian crude.
+
+Both reports claimed the so-called loophole indirectly provided the Kremlin with more than £100m in tax revenues.
+
+They also said the bulk of the imports came mainly from three oil refineries in India - Jamnagar, Vadinar and New Mangalore, along with nine others in several countries including China.
+
+Most of the estimates made by CREA and Global Witness were based on analysis of oil shipment figures from data and analytics firm Kpler, with pricing data based on Eurostat along with some other data sources.
+
+Both CREA and Global Witness said the two research papers were based on assumptions and admitted there were challenges and limitations around analysing such trade.
+                            </P>
+                        
+                    </div>
+                </div>
+                <div class="innerpage-card">
+                    <h4>Top Stories</h4>
+                    <div class="innerpage-sidecard">
+                        <div class="innerpage2">
+                            <div class="card">
+                                <ul class="list-group list-group-flush" style="padding-top: 15px; list-style: none;">
+                                    <li class="list-group-item ">
+                                        <div class="card-img">
+                                            <a href="business26.html"><img src="../gellery/busines26.jpg" class="card-img-top"
+                                                    alt="..."></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <p><a class="homebusi-text" href="business26.html">
+                                              One million electric cars sold in the UK since 2002 .</a></p>
+
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="card-img">
+                                            <a href="business27.html"><img src="../gellery/busines27.jpg" class="card-img-top"
+                                                    alt="..."></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <p><a class="homebusi-text" href="business27.html">
+                                              Russian oil getting into UK via refinery loophole, reports claim
+                                                </a></p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="card-img">
+                                            <a href="business28.html"><img src="../gellery/busines28.jpg" class="card-img-top"
+                                                    alt="..."></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <p><a class="homebusi-text" href="business28.html">
+                                              Buying banknotes to survive Zimbabwe's sky-high inflation
+                                                </a></p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="card-img">
+                                            <a href="business29.html"><img src="../gellery/busines29.jpg" class="card-img-top"
+                                                    alt="..."></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <p><a class="homebusi-text" href="business29.html">
+                                              Could AI 'trading bots' transform the world of investing?
+                                                </a></p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="card-img">
+                                            <a href="business30.html"><img src="../gellery/busines30.jpg" class="card-img-top"
+                                                    alt="..."></a>
+                                        </div>
+                                        <div class="card-body">
+                                            <p><a class="homebusi-text" href="business30.html">
+                                              Parisians vote for rise in parking fees for SUVs .
+                                                </a></p>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row foot">
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box  ">
+                <h2 class="mb-3">Explore the DNBC</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam repellendus sunt
+                  praesentium
+                  aspernatur iure molestias.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box mx-5">
+                <h2>World</h2>
+                <ul>
+                  <li><a href="../city4.html">China</a></li>
+                  <li><a href="../latestnews.html">Asia</a></li>
+                  <li><a href="../city3.html">Europe</a></li>
+                  <li><a href="../city5.html">United Kingdom</a></li>
+                  <li><a href="../city2.html">America</a></li>
+                  <li><a href="../city1.html">Middle East</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box ">
+                <h2>DNBC Details</h2>
+                <ul>
+                  <li><a href="../../about.html">About us</a></li>
+                  <li><a href="../../faq.html">FAQ</a></li>
+                  <li><a href="../../index.html">Home</a></li>
+                  <li><a href="../../index.html">News</a></li>
+                  <li><a href="../../feedback.html">Feedback</a></li>
+                  <li><a href="../../contact.html">Contact us</a></li>
+  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box ">
+                <h2>Join Us</h2>
+                <button type="button" class="btn mt-4 watch px-3">
+                  <a href="">Watch TV Here</a>
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright © 2024 DNBC. The DNBC is not responsible for the content of external sites
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

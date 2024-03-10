@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>DNBC News Home</title>
+</head>
+
+<body>
+  <div class="loader" id="loader">
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-expand-ms nav1">
+      <a href="#" class="navbar-brand  logo text-white">
+        <img src="gallery/logo.png" alt="">
+      </a>
+      <a class="signin" href="sign.html"><i class="fa-solid fa-user"></i> Sign in</a>
+      <button class="navbar-toggler ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#btn"
+        aria-controls="btn" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="navline"></div>
+      <div class="collapse navbar-collapse mx-5 mx-5 mx-md-2 navmenu1  " id="btn">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-dark px-3 px-md-2 navitem1 mx-md-1" style="margin-left: 20px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-dark px-3 px-md-2 navitem2">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link text-dark px-3 px-md-2 navitem3 ">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link text-dark px-3 px-md-2 navitem4">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="feedback.html" class="nav-link text-dark px-3 px-md-2 navitem6">FeedBack</a>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link text-dark px-3 px-md-2 navitem5">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <input class="form-control mx-4" type="text" placeholder="Search" aria-label="Disabled input example"
+              disabled>
+          </li>
+          <li class="nav-item">
+            <span class="bell bell-btn"><i class="fa fa-bell bellicon" aria-hidden="true"></i></span>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md navbar-expand-ms nav2">
+      <a href="#" class="navbar-brand news-logo text-white">NEWS</a>
+      <button class="navbar-toggler ms-5 text-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a href="innerpages/business.html" class="nav-link text-white navmenu2 navitem ">Bussiness</a>
+          </li>
+          <li class="nav-item">
+            <a href="innerpages/latestnews.html" class="nav-link text-white navmenu2 navitem">Today in the World</a>
+          </li>
+          <li class="nav-item">
+            <a href="innerpages/sport.html" class="nav-link text-white navmenu2 navitem">Sport</a>
+          </li>
+          <li class="nav-item">
+            <a href="innerpages/entertainment.html" class="nav-link text-white navmenu2 navitem ">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a href="innerpages/politics.html" class="nav-link text-white navmenu2 navitem ">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a href="innerpages/city1.html" class="nav-link text-white navmenu2 navitem ">Tokyo</a>
+          </li>
+          <li class="nav-item">
+            <a href="innerpages/city5.html" class="nav-link text-white navmenu2 navitem ">England</a>
+          </li>
+          <li class="nav-item">
+            <a href="innerpages/city3.html" class="nav-link text-white navmenu2 navitem ">Paris</a>
+          </li>
+          <li class="nav-item">
+            <a href="innerpages/city4.html" class="nav-link text-white navmenu2 navitem ">Shanghai</a>
+          </li>
+          <li class="nav-item">
+            <a href="innerpages/city2.html" class="nav-link text-white navmenu2 navitem ">Sao Paulo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+      <span class="close-btn material-symbols-rounded">X</span>
+      <div class="subscontainer">
+        <div class="subsmain-card">
+          <input type="checkbox" id="chk1" aria-hidden="true">
+
+          <div class="plane">
+            <label class="subtittle" for="chk1" aria-hidden="true">BASIC</label>
+            <div class="dealrow">
+              <div class="price-details">
+                <span class="price">$19</span>
+              </div>
+              <ul class="subfeatures">
+                <li><i class="fas fa-check"></i><span>100 GB Premium Bandwidth</span></li>
+                <li><i class="fas fa-check"></i><span>FREE 50+ Installation Scripts</span></li>
+                <li><i class="fas fa-check"></i><span>One FREE Domain Registration </span></li>
+                <li><i class="fas fa-check"></i><span>Unlimited Email Accounts </span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment">
+            <form class="subsform" id="subscript">
+              <label class="pay" for="chk1" aria-hidden="true">Subscribe</label>
+              <input class="subsinput" type="text" name="cardholder" placeholder="Cardholder Name" required>
+              <input class="subsinput" type="text" name="cardnumber" placeholder="Card Number" required>
+              <input class="subsinput" type="date" name="expirydate" placeholder="Expiry Date" required>
+              <input class="purchase" type="submit" name="submit" value="Purchase">
+            </form>
+          </div>
+        </div>
+        <div class="subsmain-card">
+          <input type="checkbox" id="chk2" aria-hidden="true">
+
+          <div class="plane">
+            <label class="subtittle" for="chk2" aria-hidden="true">PREMIUM</label>
+            <div class="dealrow">
+              <div class="price-details">
+                <span class="price">$29</span>
+              </div>
+              <ul class="subfeatures">
+                <li><i class="fas fa-check"></i><span>Unlimited GB Premium </span></li>
+                <li><i class="fas fa-check"></i><span>FREE 200+ Installation Scripts </span></li>
+                <li><i class="fas fa-check"></i><span>Five FREE Domain Registration</span></li>
+                <li><i class="fas fa-check"></i><span>Unlimited Email Accounts </span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment">
+            <form class="subsform" id="subscript">
+              <label class="pay" for="chk2" aria-hidden="true">Subscribe</label>
+              <input class="subsinput" type="text" name="cardholder" placeholder="Cardholder Name" required>
+              <input class="subsinput" type="text" name="cardnumber" placeholder="Card Number" required>
+              <input class="subsinput" type="date" name="expirydate" placeholder="Expiry Date" required>
+              <input class="purchase" type="submit" name="submit" value="Purchase">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="section-padding">
+      <div class="headline">
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item  active">
+              <img src="gallery/headline1.jpg" style="background-position: center;" class=" d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <h5><span class="auto-type1"></span></h5>
+                <P>UN Security council to meet after ICJ ruling on Israel-Gaza war THE UN SECURITY Council will meet
+                  next
+                  week over the decision by the global body’s top court calling for Israel .</P>
+              </div>
+            </div>
+            <div class="carousel-item headliness">
+              <img src="gallery/headline2.jpg" class="  d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <h5><span class="auto-type2">War in Ukarain</span></h5>
+                <P>Ukraine's military command has issued a carefully worded statement following the crash of a Russian
+                  military plane near the Ukrainian border has issued a carefully worded statement </p>
+              </div>
+            </div>
+            <div class="carousel-item headliness">
+              <img src="gallery/headline3.jpg" class=" d-block w-100" alt="...">
+              <div class="carousel-caption">
+                <h5><span class="auto-type3">Pakistan Ex-PM Imran Khan</span></h5>
+                <P>Imran Khan and his wife Bushra Bibi have been sentenced to 14 years in prison, a day after the former
+                  Pakistan prime minister was jailed for 10 yearsBibi have been sentenced to 14 years in prison,.</P>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class=" Latest">
+      <span class="home-head" style="margin-left: 10%;">
+        Latest News</span>
+      <div class="latestnews-cards">
+        <div class="container-fluid latestnewscontainer">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card" style="outline: none;" data-aos="fade-right">
+                <a href="innerpages/latestnewspage/latestslide1.html" target="_blank"><img
+                    src="gallery/latestslied1.png" class="latestcard-img" alt=""></a>
+                <div class="card-body">
+                  <p><a class="latest-text stbold" href="innerpages/latestnewspage/latestslide1.html">Hind Rajab, 6,
+                      found dead in Gaza days after phone calls.
+                    </a>
+                  </p>
+                  <p> <a class="latest-text" href="innerpages/latestnewspage/latestslide1.html" target="_blank">Hind Rajab, 6, found
+                      dead in Gaza days after phone calls for help
+                      Lorem, ipsum dolor. . </a></p>
+                      <div class="alaram">
+                        <span class="time"><i class="fa-regular fa-clock clock "></i>36min</span>
+                        <span class="type">News</span>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card" data-aos="fade-up">
+                <a href="innerpages/latestnewspage/latestslide2.html"><img src="gallery/latestslied2.png"
+                    class="latestcard-img" alt=""></a>
+                <div class="card-body">
+                  <p><a class="latest-text stbold" href="innerpages/latestnewspage/latestslide2.html">Ex-PM Imran Khan gets bail in 12 cases related .
+                    </a></p>
+                  <p><a class="latest-text" href="innerpages/latestnewspage/latestslide2.html">Ex-PM Imran Khan gets
+                      bail in
+                      12 cases related to May 9 violence, amet</a></p>
+                      <div class="alaram">
+                        <span class="time"><i class="fa-regular fa-clock clock "></i>45min</span>
+                        <span class="type">Politics</span>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card" data-aos="fade-down">
+                <a href="innerpages/latestnewspage/latestslide3.html"><img src="gallery/latestslied3.png"
+                    class="latestcard-img" alt=""></a>
+                <div class="card-body">
+                  <p><a class="latest-text stbold" href="innerpages/latestnewspage/latestslide3.html">Bad economy, nosy relatives: Young Chinese put
+                    </a></p>
+                  <p><a class="latest-text" href="innerpages/latestnewspage/latestslide3.html">Bad economy, nosy
+                      relatives:
+                      Young Chinese put off by Lunar New Year Lorem ipsum dol</a></p>
+                  <div class="alaram">
+                    <span class="time"><i class="fa-regular fa-clock clock "></i>45min</span>
+                    <span class="type">Bussiness</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card" data-aos="fade-left">
+                <a href="innerpages/latestnewspage/latestslide4.html"><img src="gallery/latestslied4.png"
+                    class="latestcard-img" alt=""></a>
+                <div class="card-body">
+                  <p><a class="latest-text stbold" href="innerpages/latestnewspage/latestslide4.html">King Charles thanks public for support after cancer
+                      diagnosis</a></p>
+                  <p><a class="latest-text" href="innerpages/latestnewspage/latestslide4.html">King Charles thanks
+                      public for
+                      support after cancer diagnosis Lorem ipsum dolor sit amet..</a></p>
+                      <div class="alaram">
+                        <span class="time"><i class="fa-regular fa-clock clock "></i>3h</span>
+                        <span class="type">News</span>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="line"></div>
+      <div class="text-cards">
+        <div class="textcontainer">
+          <div class="row">
+            <div class=" col col-12 col-md-6 col-lg-2 ">
+              <div class="normal-text" data-aos="fade-right">
+                <p><a class="homebusi-text stbold" target="_blank" href="innerpages/businessinnerpages/business36.html"> Can vaccines
+                    help India triumph over tuberculosis?</a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>7h</span>
+                      <span class="type">News</span>
+                    </div>
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-2">
+              <div class="normal-text" data-aos="fade-right">
+                <p><a class="homebusi-text stbold" target="_blank" href="innerpages/businessinnerpages/business35.html">Gaza aid agency
+                    says it is 'extremely desperate'
+                  </a></p>
+                  <div class="alaram">
+                    <span class="time"><i class="fa-regular fa-clock clock "></i>8h</span>
+                    <span class="type">Newa</span>
+                  </div>
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-2">
+              <div class="normal-text" data-aos="fade-right">
+                <p><a class="homebusi-text stbold" target="_blank" href="innerpages/businessinnerpages/business32.html">Fans angered as
+                    World Cup winner fails to play</a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>1d</span>
+                      <span class="type">Entertainment</span>
+                    </div>
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-2">
+              <div class="normal-text" data-aos="fade-left">
+                <p><a class="homebusi-text stbold" target="_blank" href="innerpages/sportinnerpages/cri18.html"> Virat Kohli hits record
+                    50th ODI century</a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>8h</span>
+                      <span class="type">Cirket</span>
+                    </div>
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-2" data-aos="fade-left">
+              <div class="normal-text">
+                <p><a class="homebusi-text stbold" target="_blank" href="innerpages/sportinnerpages/cri28.html">Nottinghamshire seamer
+                    signs two-year contract</a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>1d</span>
+                      <span class="type">Bussiness</span>
+                    </div>
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-2" data-aos="fade-left">
+              <div class="normal-text">
+                <p><a class="homebusi-text stbold" target="_blank" href="innerpages/entertainment/entertain.10.jpg">Barbenheimer was a
+                    'wonderful moment for cinema'</a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>2d</span>
+                      <span class="type">Entertainment</span>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wpopup">
+      <button id="wclose">&times;</button>
+      <h2 class="text-dark">Welcome To DNBC</h2>
+      <p>We hope you find What you're looking for and that you enjoy your stay We have look Forward to serving you
+      </p>
+      <H4 class="text-dark">Thank You For Visiting Us</H4>
+      <a href="sign.html" target="_blank" class="join">Join Us</a>
+    </div>
+    <section class="business ">
+      <div class="linehead">
+        <span class="home-head">
+          Business</span>
+        <div id="line2"></div>
+      </div>
+      <div class="home-business">
+        <div class="businesscard1">
+          <div class="bighomecard" data-aos="fade-right">
+            <a href="innerpages/businessinnerpages/business1.html"><img src="gallery/business1.jpg"
+                class=" img-fluid bighomecard-img" alt=""></a>
+            <div class="bighomecard-content">
+              <h2><a class="homebhead" href="innerpages/businessinnerpages/business1.html">Why private helicopters are
+                  still in demand</a></h2>
+              <P><a class="homebusi-text" target="_blank" href="innerpages/businessinnerpages/business1.html">You buy a helicopter to save time, it's an efficient way of getting
+                  from A to B." And
+                  private helicopter owners can recoup their costs by leasing their machine out to flying schools when
+                  they're not using it. Also, appearing on the horizon, are fresh competitors for the helicopter
+                  businessprivate helicopter owners can recoup their costs by leasing their machine out to flying
+                  schools Also, appearing on the horizon, are fresh competitors for the helicopter
+                  businessprivate helicopter owners can recoup their costs by leasing .</a></P>
+                  <div class="alaram">
+                    <span class="time"><i class="fa-regular fa-clock clock "></i>1d</span>
+                    <span class="type">Bussiness</span>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <div class="businesscard2" data-aos="fade-left">
+          <div class="">
+            <ul class="list-group list-group-flush" style="padding-top: 15px; list-style: none;">
+              <li class="list-group-item ">
+                <div class="card-img pt-2">
+                  <a target="_blank" href="innerpages/businessinnerpages/business2.html"><img src="gallery/business2.jpg"
+                      class="card-img-top" alt="..."></a>
+                </div>
+                <div class="card-body">
+                  <p><a class="homebusi-text stbold" target="_blank" href="innerpages/businessinnerpages/business2.html">
+                      Developer Epic Games will be allowed to run its own app store on Apple .</a></p>
+
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="card-img pt-2">
+                  <a target="_blank" href="innerpages/businessinnerpages/business3.html"><img src="gallery/business3.png"
+                      class="card-img-top" alt="..."></a>
+                </div>
+                <div class="card-body">
+                  <p><a target="_blank" class="homebusi-text stbold" href="innerpages/businessinnerpages/business3.html">
+                      China has tightened its financial industry rules as the government tries.
+                    </a></p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="card-img pt-2">
+                  <a target="_blank" href="innerpages/businessinnerpages/business5.html"><img src="gallery/business.jpg"
+                      class="card-img-top" alt="..."></a>
+                </div>
+                <div class="card-body">
+                  <p><a class="homebusi-text stbold" href="innerpages/businessinnerpages/business5.html" target="_blank">
+                      Disposable vapes to be banned for children's health, government.
+                    </a></p>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <div class="card-img pt-2">
+                  <a href="innerpages/businessinnerpages/business6.html" target="_blank"><img src="gallery/business5.jpg"
+                      class="card-img-top" alt="..."></a>
+                </div>
+                <div class="card-body">
+                  <p><a class="homebusi-text stbold" href="innerpages/businessinnerpages/business6.html" target="_blank">
+                      UK-Canada trade rift What it means for cheese, beef and cars
+                    </a></p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="card-img pt-2">
+                  <a href="innerpages/businessinnerpages/business10.html" target="_blank"><img src="innerpages/gellery/busines10.jpg"
+                      class="card-img-top" alt="..."></a>
+                </div>
+                <div class="card-body">
+                  <p><a class="homebusi-text stbold" href="innerpages/businessinnerpages/business10.html" target="_blank">
+                      Does Germany’s economy need more than a cup of coffee?
+                    </a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="line"></div>
+      <div class="text-cards">
+        <div class="textcontainer">
+          <div class="row">
+            <div class=" col col-12 col-md-6 col-lg-3 ">
+              <div class=" notext normal-text" data-aos="fade-right">
+                <span class="number">1</span>
+                <p><a class="homebusi-text stbold" href="innerpages/sportinnerpages/cri27.html" target="_blank"> Can African
+                    heavyweights survive semi-finals?</a></p>
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-3">
+              <div class=" notext normal-text" data-aos="fade-right">
+                <span class="number">2</span>
+                <p><a class="homebusi-text stbold" href="innerpages/sportinnerpages/cri24.html" target="_blank">how wheelchair tennis
+                    became a Grand Slam </a></p>
+
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-3">
+              <div class=" notext normal-text" data-aos="fade-left">
+                <span class="number">3</span>
+                <p><a class="homebusi-text stbold" href="innerpages/entertainment/entertain17.html" target="_blank">Napping polar bear
+                    image wins top wildlife </a></p>
+
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-3">
+              <div class="notext normal-text" data-aos="fade-left">
+                <span class="number">4</span>
+                <p><a class="homebusi-text stbold" href="innerpages/entertainment/entertain14.html" target="_blank">Olly Alexander gives
+                    fans a spin of UK entry Dizzy</a></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=" home-sport">
+      <div class="linehead">
+        <span class="home-head">
+          Sports</span>
+        <div id="line2"></div>
+      </div>
+      <div class="homesport-card">
+        <div class="homesport1">
+          <div class="homesport1-card" data-aos="fade-right">
+            <div class="card">
+              <a href="innerpages/sportinnerpages/tennis1.html" target="_blank"><img src="gallery/tennis1.jpg" class="card-img-top "
+                  alt="..."></a>
+              <div class="card-body">
+                <p class="card-text"><a class="homebusi-text stbold"
+                    href="innerpages/sportinnerpages/tennis1.html" target="_blank">Jannik
+                    Sinner 'dances in pressure storm'. </a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>2d</span>
+                      <span class="type">Sport</span>
+                    </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="innerpages/sportinnerpages/football1.html" target="_blank"><img src="gallery/football1.jpg" class="card-img-top"
+                  alt="..."></a>
+              <div class="card-body">
+                <p class="card-text"><a class="homebusi-text stbold"
+                    href="innerpages/sportinnerpages/football1.html" target="_blank">Cristian
+                    Portu strike sinks Celta Vigo to take</a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>35min</span>
+                      <span class="type">Sport</span>
+                    </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="innerpages/sportinnerpages/football2.html" target="_blank"><img src="gallery/football2.png" class="card-img-top"
+                  alt="..."></a>
+              <div class="card-body">
+                <p class="card-text"><a class="homebusi-text stbold"
+                    href="innerpages/sportinnerpages/football2.html" target="_blank">Liverpool
+                    manager appreciates appreciates</a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>4d</span>
+                      <span class="type">Sport</span>
+                    </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="innerpages/sportinnerpages/football3.html" target="_blank"><img src="gallery/football3.jpg" class="card-img-top"
+                  alt="..."></a>
+              <div class="card-body">
+                <p class="card-text"><a class="homebusi-text stbold"
+                    href="innerpages/sportinnerpages/football3.html" target="_blank">Marcus
+                    Rashford's absence an 'internal
+                  </a></p>
+                  <div class="alaram">
+                    <span class="time"><i class="fa-regular fa-clock clock "></i>18h</span>
+                    <span class="type">Sport</span>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <a href="innerpages/sportinnerpages/cirket1.html" target="_blank"><img src="gallery/cirket1.jpg" class="card-img-top"
+                  alt="..."></a>
+              <div class="card-body">
+                <p class="card-text"><a class="homebusi-text stbold" target="_blank" href="innerpages/sportinnerpages/cirket1.html">Nat
+                    Sciver-Brunt named ICC women's cricket </a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>16h</span>
+                      <span class="type">Sport</span>
+                    </div>
+              </div>
+            </div>
+            <div class="card">
+              <a href="innerpages/sportinnerpages/cirket2.html" target="_blank"><img src="gallery/cirket2.jpg" class="card-img-top"
+                  alt="..."></a>
+              <div class="card-body">
+                <p class="card-text"><a class="homebusi-text stbold"
+                    href="innerpages/sportinnerpages/cirket2.html" target="_blank">Cambodia
+                    forfeited T20 international against
+                  </a></p>
+                  <div class="alaram">
+                    <span class="time"><i class="fa-regular fa-clock clock "></i>1d</span>
+                    <span class="type">Sport</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="homesport2" data-aos="fade-left">
+          <a href="innerpages/sportinnerpages/cirket3.html" target="_blank"><img src="gallery/ciket3.jpg" alt=""></a>
+          <div class="homesport2-content">
+            <h2><a class="homeshead" href="innerpages/sportinnerpages/cirket3.html" target="_blank">West Indies'after win in
+                Australia</a>
+            </h2>
+            <p><a class="homebusi-text" href="innerpages/sportinnerpages/cirket3.html">Test cricket will live for "a very long time" and has always been more
+                special to people in
+                the Caribbean than franchise cricket,Test cricket will live for "a very long time" and has always been
+                more
+                special to people in
+                the Caribbean than franchise cricket,special to people in
+                the Caribbean than franchise cricket, </a></p>
+          </div>
+          <!-- <div class="homesport3"> -->
+          <div class="card">
+            <ul class="list-group list-group-flush" style=" list-style: none;">
+              <li class="list-group-item ">
+                <div class="card-img">
+                  <a href="innerpages/sportinnerpages/cirket4.html" target="_blank"><img src="gallery/cirket4.jpg" class="card-img-top women"
+                      alt="..."></a>
+                </div>
+                <div class="card-body">
+                  <p><a class="homebusi-text stbold" target="_blank" href="innerpages/sportinnerpages/cirket4.html">India vs England: KL
+                      Rahul
+                      and Ravindra Jadeja Ravindra Jadeja </a></p>
+                      <div class="alaram">
+                        <span class="time"><i class="fa-regular fa-clock clock "></i>20h</span>
+                        <span class="type">Sport</span>
+                      </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+    <section class="section-padding">
+      <div class="linehead">
+        <span class="home-head">
+          Feature Analysis</span>
+        <div id="line2" style="width: 50%;"></div>
+      </div>
+      <div class="text-cards">
+        <div class="textcontainer">
+          <div class="row">
+            <div class=" col col-12 col-md-6 col-lg-3 ">
+              <div class="normal-text" data-aos="zoom-in-left">
+                <a href="innerpages/businessinnerpages/business11.html"><img src="innerpages/gellery/bussiness11.png"
+                    class="card-img-top" alt=""></a>
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-3">
+              <div class="normal-text" data-aos="zoom-in-left">
+                <p><a class="homebusi-text stbold" href="innerpages/businessinnerpages/business11.html"> Zuckerberg wins
+                    on Wall Street after Washington hit .Obcaecati, enim dolor sit amet consectetur adipisicing
+                    elit. Obcaecati Lorem ipsum dolor sit amet.</a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>6d</span>
+                      <span class="type">Bussiness</span>
+                    </div>
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-3">
+              <div class="normal-text" data-aos="zoom-in-left">
+                <a href="innerpages/businessinnerpages/business12.html"><img src="innerpages/gellery/busines12.jpg"
+                    class="card-img-top" alt=""></a>
+              </div>
+            </div>
+            <div class=" col col-12 col-md-6 col-lg-3">
+              <div class="normal-text" data-aos="zoom-in-left">
+                <p><a class="homebusi-text stbold" href="innerpages/businessinnerpages/business12.html"> Bank of England
+                    moving closer to interest rate cut enim dolor sit amet consectetur adipisicing
+                    elit. Obcaecati Lorem ipsum dolor sit amet</a></p>
+                    <div class="alaram">
+                      <span class="time"><i class="fa-regular fa-clock clock "></i>9d</span>
+                      <span class="type">Bussiness</span>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-2">
+      <div class="linehead">
+        <span class="home-head">
+          Around the world</span>
+        <div id="line2" style="width: 45%;"></div>
+      </div>
+      <div class="container">
+        <div class="row shad">
+          <div class="bdnews" data-aos="fade-right">
+            <div class="homenew">
+              <span><a href="innerpages/politicinnnerpage/politic5.html" class="newtext ">Debunking five false Trump
+                  claims about NATO ipsum dolor sit amet
+                  consectetur adipisicing elit. Quos consectetur adipisicing elit. .</a></span>
+
+            </div>
+            <P class="tew"></P>
+          </div>
+          <div class="sdnews" data-aos="fade-left">
+            <div class="sd1">
+              <div class="sde1">
+                <div class="homenew mx-3">
+                  
+                  <span><a href="innerpages/businessinnerpages/market1.html" class="newtext text-white">Megacap U.S.
+                      stocks are carrying</a></span>
+                    
+                </div>
+              </div>
+              <div class="sde2">
+                <div class="homenew mx-3">
+                  
+                  <span><a href="innerpages/businessinnerpages/business4.html" class="newtext text-white">Amazon-iRobot
+                      deal scrapped </a></span>
+                      
+                </div>
+              </div>
+            </div>
+            <div class="sd2 mx-3">
+              <div class="dtext mx-2" style="border-top: none;">
+                <span><a href="innerpages/politicinnnerpage/politic1.html" class="newtext" style="color: black;">Tasneem
+                    To Be Grilled About Blames </a></span>
+              </div>
+              <div class="dtext mx-2">
+                <span><a href="innerpages/politicinnnerpage/politic2.html" class="newtext" style="color: black;">Imran
+                    Khan's rivals PML-N and PPP </a></span>
+              </div>
+              <div class="dtext mx-2">
+                <span><a href="innerpages/politicinnnerpage/politic3.html" class="newtext" style="color: black;">Haley’s
+                    voters might decide Biden’s</a></span>
+              </div>
+              <div class="dtext mx-2">
+                <span><a href="innerpages/politicinnnerpage/politic5.html" class="newtext" style="color: black;">Pact
+                    may shut out Imran Khan </a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="event pt-5">
+      <div class="linehead">
+        <span class="home-head">
+          Entertainment</span>
+        <div id="line2" style="width: 50%;"></div>
+      </div>
+      <div class="homeentertain">
+        <div class="homeentertaincard">
+          <div class="card" data-aos="fade-up">
+            <a href="innerpages/entertainment/entertain1.html"><img src="gallery/entertain1.png" class="card-img-top"
+                alt="..."></a>
+            <div class="card-body">
+              <p class="card-text"><a class="homeenhead" href="innerpages/entertainment/entertain1.html">Theatre critics
+                  say Sarah Jessica Parker is a
+                  'revelation'</a></p>
+                  <div class="alaram">
+                    <span class="time"><i class="fa-regular fa-clock clock "></i>1d</span>
+                    <span class="type">Entertainment</span>
+                  </div>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up">
+            <a href="innerpages/entertainment/entertain3.html"><img src="gallery/entertain2.png" class="card-img-top"
+                alt="..."></a>
+            <div class="card-body">
+              <p class="card-text"><a class="homeenhead" href="innerpages/entertainment/entertain3.html">Adele announces
+                  'random' Munich residency</a>
+              </p>
+              <div class="alaram">
+                <span class="time"><i class="fa-regular fa-clock clock "></i>14h</span>
+                <span class="type">Entertainment</span>
+              </div>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up">
+            <a href="innerpages/entertainment/entertain2.html"><img src="gallery/entertain3.png" class="card-img-top"
+                alt="..."></a>
+            <div class="card-body">
+              <p class="card-text"><a class="homeenhead" href="innerpages/entertainment/entertain2.html">It's a dream
+                  come true to work in Urdu come true to work in
+                  .</a></p>
+                  <div class="alaram">
+                    <span class="time"><i class="fa-regular fa-clock clock "></i>3h</span>
+                    <span class="type">Entertainment</span>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-padding">
+      <div class="linehead">
+        <span class="home-head">
+          Most read</span>
+        <div id="line2"></div>
+      </div>
+      <div class="most">
+        <div class="most1" data-aos="fade-right">
+          <div class="most-text">
+            <span class="number" style="padding: 10px 20px;">1</span>
+            <p style="padding: 10px 0px;"><a class="homebusi-text stbold"
+                href="innerpages/sportinnerpages/cri25.html">Afghanistan vs Ireland Matthew Foster named in Ireland
+                squads Lorem ipsum dolor sit amet.</a></p>
+          </div>
+          <div class="most-text">
+            <span class="number" style="padding: 10px 20px;">2</span>
+            <p style="padding: 10px 0px;"><a class="homebusi-text stbold"
+                href="innerpages/sportinnerpages/cri24.html">Hot wheels - how wheelchair tennis became a Grand Slam draw
+                Lorem ipsum dolor sit.</a></p>
+          </div>
+          <div class="most-text">
+            <span class="number" style="padding: 10px 20px;">3</span>
+            <p style="padding: 10px 0px;"><a class="homebusi-text stbold"
+                href="innerpages/businessinnerpages/business13.html">How AI is helping to prevent three buses turning up
+                at one Lorem ipsum dolor sit amet consectetur.</a></p>
+          </div>
+          <div class="most-text">
+            <span class="number" style="padding: 10px 20px;">4</span>
+            <p style="padding: 10px 0px;"><a class="homebusi-text stbold"
+                href="innerpages/businessinnerpages/business20.html">Thousands of Starbucks workers strike on Red Cup
+                Day
+                enim Lorem ipsum dolor sit amete</a></p>
+          </div>
+          <div class="most-text">
+            <span class="number" style="padding: 10px 20px;">5</span>
+            <p style="padding: 10px 0px;"><a class="homebusi-text stbold"
+                href="innerpages/businessinnerpages/business29.html">Could AI 'trading bots' transform the world of
+                investing?
+                enim Lorem ipsum dolor sit amete</a></p>
+          </div>
+        </div>
+        <div class="most2" data-aos="fade-left">
+          <div class="most-text">
+            <span class="number" style="padding: 10px 20px;">6</span>
+            <p style="padding: 10px 0px;"><a class="homebusi-text stbold"
+                href="innerpages/entertainment/entertain11.html">Grammys 2024: Flowdan says award will boost UK grime
+                scene
+                enim Lorem ipsum dolor sit amete</a></p>
+          </div>
+          <div class="most-text">
+            <span class="number" style="padding: 10px 20px;">7</span>
+            <p style="padding: 10px 0px;"><a class="homebusi-text stbold"
+                href="innerpages/entertainment/entertain12.html">Carry On films: The star who helped World War II
+                prisoners escape
+                enim Lorem ipsum dolor sit amete</a></p>
+          </div>
+          <div class="most-text">
+            <span class="number" style="padding: 10px 20px;">8</span>
+            <p style="padding: 10px 0px;"><a class="homebusi-text stbold"
+                href="innerpages/sportinnerpages/foot17.html">Pebble Beach Pro-Am: Rory McIlroy fades as Scottie
+                Scheffler makes move.
+                enim Lorem ipsum dolor sit amete</a></p>
+          </div>
+          <div class="most-text">
+            <span class="number" style="padding: 10px 20px;">9</span>
+            <p style="padding: 10px 0px;"><a class="homebusi-text stbold"
+                href="innerpages/sportinnerpages/cri20.html">Future tour dates: Details of forthcoming international
+                series
+                enim Lorem ipsum dolor sit amete</a></p>
+          </div>
+          <div class="most-text">
+            <span class="number" style="padding: 10px 20px;">10</span>
+            <p style="padding: 10px 0px;"><a class="homebusi-text stbold"
+                href="innerpages/businessinnerpages/business30.html">Parisians vote for rise in parking fees for SUVs
+                enim Lorem ipsum dolor sit amete Lorem, ipsum dolor.</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="">
+      <div class="linehead">
+        <span class="home-head">
+          Videos</span>
+        <div id="line2"></div>
+      </div>
+      <div class="container mt-md-4">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="video" data-aos="fade-right">
+              <video controls autoplay muted loop src="videos/news3.mp4"></video>
+              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, recusandae ducimus. Veniam tenetur
+                consectetur reprehenderit.</P>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="videoscontainer" data-aos="fade-left">
+              <div class="col-v">
+                <video controls autoplay muted loop src="videos/news2.mp4"></video>
+              </div>
+              <div class="col-v">
+                <video controls autoplay muted loop src="videos/news1.mp4"></video>
+              </div>
+              <div class="col-v">
+                <video controls autoplay muted loop src="videos/news4.mp4"></video>
+              </div>
+              <div class="col-v">
+                <video controls autoplay muted loop src="videos/news5.mp4"></video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <section class="section-padding">
+      <div class="linehead">
+        <span class="home-head">
+          Testimonial</span>
+        <div id="line2"></div>
+      </div>
+
+
+      <div class=" Testimonial container" data-aos="fade-up">
+        <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleSlidesOnly">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card test">
+                    <div class="box front">
+                      <img alt="" src="gallery/test3.jpg">
+                      <h2>Jesicca Doe</h2>
+                      <h4>CEO, Journalist</h4>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-youtube"></i>
+                      </p>
+                    </div>
+                    <div class="box back">
+                      <span class="fa fa-quote-left"></span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis.
+                        Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card test">
+                    <div class="box front">
+                      <img alt="" src="gallery/test5.jpg">
+                      <h2>Claire Chedd</h2>
+                      <h4>CEO, MTq</h4>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-youtube"></i>
+                      </p>
+                    </div>
+                    <div class="box back">
+                      <span class="fa fa-quote-left"></span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis.
+                        Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card test">
+                    <div class="box front">
+                      <img alt="" src="gallery/test2.jpg">
+                      <h2>Maria Lopez</h2>
+                      <h4>CEO, IBA</h4>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-youtube"></i>
+                      </p>
+                    </div>
+                    <div class="box back">
+                      <span class="fa fa-quote-left"></span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis.
+                        Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card test">
+                    <div class="box front">
+                      <img alt="" src="gallery/test1.jpg">
+                      <h2>Jesicca Doe</h2>
+                      <h4>CEO, WMF</h4>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-youtube"></i>
+                      </p>
+                    </div>
+                    <div class="box back">
+                      <span class="fa fa-quote-left"></span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis.
+                        Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card test">
+                    <div class="box front">
+                      <img alt="" src="gallery/test2.jpg">
+                      <h2>Claire Chedd</h2>
+                      <h4>CEO,SWC</h4>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-youtube"></i>
+                      </p>
+                    </div>
+                    <div class="box back">
+                      <span class="fa fa-quote-left"></span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis.
+                        Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card test">
+                    <div class="box front">
+                      <img alt="" src="gallery/test3.jpg">
+                      <h2>Mary Joe</h2>
+                      <h4>CEO, ryt</h4>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-youtube"></i>
+                      </p>
+                    </div>
+                    <div class="box back">
+                      <span class="fa fa-quote-left"></span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis.
+                        Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="card test">
+                    <div class="box front">
+                      <img alt="" src="gallery/test4.jpg">
+                      <h2>Jesicca Doe</h2>
+                      <h4>CEO, Microsoft</h4>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-youtube"></i>
+                      </p>
+                    </div>
+                    <div class="box back">
+                      <span class="fa fa-quote-left"></span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis.
+                        Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card test">
+                    <div class="box front">
+                      <img alt="" src="gallery/test5.jpg">
+                      <h2>Claire Chedd</h2>
+                      <h4>CEO, Microsoft</h4>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-youtube"></i>
+                      </p>
+                    </div>
+                    <div class="box back">
+                      <span class="fa fa-quote-left"></span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis.
+                        Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="card test">
+                    <div class="box front">
+                      <img alt="" src="gallery/test6.jpg">
+                      <h2>Mary Joe</h2>
+                      <h4>CEO, Amazon</h4>
+                      <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-youtube"></i>
+                      </p>
+                    </div>
+                    <div class="box back">
+                      <span class="fa fa-quote-left"></span>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores soluta quidem dolorem debitis.
+                        Minima, optio illum magni exercitationem eum laborum! Incidunt sequi repellat vero.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-padding mb-5">
+      <div class="linehead">
+        <span class="home-head">
+          Find Us Here</span>
+        <div id="line2"></div>
+      </div>
+      <div class="iconcontainer container">
+        <div class="row">
+          <div class="homeicon">
+            <div class="button" data-aos="fade-left">
+              <div class="icon">
+                <a href="https://web.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              </div>
+              <a href="https://web.facebook.com/" class="sublink" target="_blank"><span>Facebook</span></a>
+            </div>
+            <div class="button" data-aos="fade-left">
+              <div class="icon">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+              </div>
+              <a href="https://twitter.com/" class="sublink" target="_blank"><span>Twitter</span></a>
+            </div>
+            <div class="button" data-aos="fade-up">
+              <div class="icon">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+             <a href="https://www.instagram.com/" class="sublink" target="_blank"> <span>Instagram</span></a>
+            </div>
+            <div class="button" data-aos="fade-right">
+              <div class="icon">
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+              </div>
+             <a href="https://github.com/" class="sublink" target="_blank"> <span>Github</span></a>
+            </div>
+            <div class="button" data-aos="fade-right">
+              <div class="icon">
+                <a href="https://YouTube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+              </div>
+             <a href="https://YouTube.com/" class="sublink" target="_blank"> <span>YouTube</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="row foot">
+          <div class="col-lg-3 col-sm-6">
+            <div class="foot-box  ">
+              <h2 class="mb-3">Explore the DNBC</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam repellendus sunt
+                praesentium
+                aspernatur iure molestias.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="foot-box mx-5">
+              <h2>World</h2>
+              <ul>
+                <li><a href="innerpages/latestnews.html">China</a></li>
+                <li><a href="innerpages/city4.html">Asia</a></li>
+                <li><a href="innerpages/city5.html">Europe</a></li>
+                <li><a href="innerpages/city5.html">United Kingdom</a></li>
+                <li><a href="innerpages/city2.html">America</a></li>
+                <li><a href="innerpages/city3.html">Middle East</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="foot-box ">
+              <h2>DNBC Details</h2>
+              <ul>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">News</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="foot-box ">
+              <h2>Join Us</h2>
+              <button type="button" class="  btn mt-4 watch px-3">
+                <a  href="sign.html">Watch TV Here</a>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright © 2024 DNBC. The DNBC is not responsible for the content of external sites
+    </div>
+  </footer>
+  <!-- -------------------auto-typejs -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init({
+      offset: 150,
+      duration: 700
+    });
+  </script>
+</body>
+
+</html>

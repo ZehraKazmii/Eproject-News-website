@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="inner-style.css">
+    <title>TOKYO</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-expand-ms nav1">
+      <a href="#" class="navbar-brand  logo text-white">
+        <img src="gellery/logo.png" alt="">
+      </a>
+      <a class="signin" href=""><i class="fa-solid fa-user"></i> Sign in</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn" aria-controls="btn"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="navline"></div>
+      <div class="collapse navbar-collapse mx-5 mx-5 navmenu1 " id="btn">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link text-dark px-3 navitem1" style="margin-left: 20px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link text-dark px-3 navitem2">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="../about.html" class="nav-link text-dark px-3 navitem3 ">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="../contact.html" class="nav-link text-dark px-3 navitem4">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="../feedback.html" class="nav-link text-dark px-3 navitem6">FeedBack</a>
+          </li>
+          <li class="nav-item">
+            <a href="../faq.html" class="nav-link text-dark px-3 navitem5">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <input class="form-control search" type="text" placeholder="Search" aria-label="Disabled input example" disabled>
+          </li>
+          <li class="nav-item">
+            <span class="bell bell-btn"><i class="fa fa-bell bellicon" aria-hidden="true"></i></span> 
+          </li>
+           
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md nav2">
+      <a href="#" class="navbar-brand news-logo text-white">NEWS</a>
+      <button class="navbar-toggler ms-5 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a href="business.html" class="nav-link text-white navmenu2 navitem ">Bussiness</a>
+          </li>
+          <li class="nav-item">
+            <a href="latestnews.html" class="nav-link text-white navmenu2 navitem">Today in the World</a>
+          </li>
+          <li class="nav-item">
+            <a href="sport.html" class="nav-link text-white navmenu2 navitem">Sport</a>
+          </li>
+          <li class="nav-item">
+            <a href="entertainment.html" class="nav-link text-white navmenu2 navitem ">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a href="politics.html" class="nav-link text-white navmenu2 navitem ">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a href="city1.html" class="nav-link text-white navmenu2 navitem ">Tokyo</a>
+          </li>
+          <li class="nav-item">
+            <a href="city5.html" class="nav-link text-white navmenu2 navitem ">England</a>
+          </li>
+          <li class="nav-item">
+            <a href="city3.html" class="nav-link text-white navmenu2 navitem ">Paris</a>
+          </li>
+          <li class="nav-item">
+            <a href="city4.html" class="nav-link text-white navmenu2 navitem ">Shanghai</a>
+          </li>
+          <li class="nav-item">
+            <a href="city2.html" class="nav-link text-white navmenu2 navitem ">Sao Paulo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <main>
+      <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+      <span class="close-btn material-symbols-rounded">X</span>
+      <div class="subscontainer">
+        <div class="subsmain-card">
+          <input type="checkbox" id="chk1" aria-hidden="true">
+
+          <div class="plane">
+            <label class="subtittle" for="chk1" aria-hidden="true">BASIC</label>
+            <div class="dealrow">
+              <div class="price-details">
+                <span class="price">$19</span>
+              </div>
+              <ul class="subfeatures">
+                <li><i class="fas fa-check"></i><span>100 GB Premium Bandwidth</span></li>
+                <li><i class="fas fa-check"></i><span>FREE 50+ Installation Scripts</span></li>
+                <li><i class="fas fa-check"></i><span>One FREE Domain Registration </span></li>
+                <li><i class="fas fa-check"></i><span>Unlimited Email Accounts </span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment">
+            <form class="subsform" id="subscript">
+              <label class="pay" for="chk1" aria-hidden="true">Subscribe</label>
+              <input class="subsinput" type="text" name="cardholder" placeholder="Cardholder Name" required>
+              <input class="subsinput" type="text" name="cardnumber" placeholder="Card Number" required>
+              <input class="subsinput" type="date" name="expirydate" placeholder="Expiry Date" required>
+              <input class="purchase" type="submit" name="submit" value="Purchase">
+            </form>
+          </div>
+        </div>
+        <div class="subsmain-card">
+          <input type="checkbox" id="chk2" aria-hidden="true">
+
+          <div class="plane">
+            <label class="subtittle" for="chk2" aria-hidden="true">PREMIUM</label>
+            <div class="dealrow">
+              <div class="price-details">
+                <span class="price">$29</span>
+              </div>
+              <ul class="subfeatures">
+                <li><i class="fas fa-check"></i><span>Unlimited GB Premium </span></li>
+                <li><i class="fas fa-check"></i><span>FREE 200+ Installation Scripts </span></li>
+                <li><i class="fas fa-check"></i><span>Five FREE Domain Registration</span></li>
+                <li><i class="fas fa-check"></i><span>Unlimited Email Accounts </span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment">
+            <form class="subsform" id="subscript">
+              <label class="pay" for="chk2" aria-hidden="true">Subscribe</label>
+              <input class="subsinput" type="text" name="cardholder" placeholder="Cardholder Name" required>
+              <input class="subsinput" type="text" name="cardnumber" placeholder="Card Number" required>
+              <input class="subsinput" type="date" name="expirydate" placeholder="Expiry Date" required>
+              <input class="purchase" type="submit" name="submit" value="Purchase">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+        <h2 class="cityhead">TOKYO</h2>
+        <section class="city1 section-padding">
+            <div class="city1container container mt-5">
+                <div class="row ">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="city1-content" data-aos="fade-up-right">
+                            <figure class="figure">
+                                <img src="gellery/city1.1.jpg" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption">Prime Minister Fumio Kishida discusses a new foreign
+                                    worker system, in Tokyo on Friday
+                                </figcaption>
+                            </figure>
+                            <h2>Japan to end technical intern program and allow transfers to new jobs</h2>
+                            <p>The government on Friday formally decided to abolish the controversial foreign technical
+                                intern program, marking a significant shift in its approach to workers from overseas. In
+                                its place, there will be a new system enabling long-term residency.
+                                The new system is aimed at bringing foreign workers up to a certain skill level within
+                                three years, paving the way for a long-term stay in Japan.
+                                The plan also allows for conditional transfers to different workplaces within the same
+                                field after a certain period, a departure from the previous program’s emphasis on
+                                transferring technical skills back to developing countries. Instead, it will focus on
+                                securing and developing essential workers from abroad to tackle Japan's current labor
+                                shortage, which is being exacerbated by its shrinking population.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="city1-content" data-aos="fade-up-left">
+                            <figure class="figure">
+                                <img src="gellery/city1.2.jpg" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption">Japanese companies are paying higher starting
+                                    salaries as they struggle to secure young workers.
+                                </figcaption>
+                            </figure>
+                            <h2>Japanese firms boosting pay for young workers is good news for Bank of Japan</h2>
+                            <p>Japanese firms are increasingly boosting starting pay for young employees, potentially
+                                building longer-term momentum for overall wage growth in a welcome development for the
+                                Bank of Japan as it seeks evidence of a virtuous wage-price cycle.
+                                Companies including Dai-Ichi Life Holdings and Nomura Holdings have announced plans to
+                                raise wages for younger staff by 16%. Some firms are going even further, with Tokyo
+                                Electron boosting starting salaries by 40% and Asics pledging to raise pay for incoming
+                                college grads by 24%. The figures are all well above average salary gains and</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="line"></div>
+        <section class="section-padding">
+            <div class="city1.1container container" data-aos="fade-right">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <img src="gellery/city1.3.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <h4>Toyoko Kids: The lonely street children of Tokyo</h4>
+                        <P>But just out of sight of visitors filming the spectacle with their phones, between the newly built tourist hotspot Tokyu Kabukicho Tower and the Toho cinema, is the gathering point for the 21st century street children of Tokyo — the Toyoko Kids.
+
+                            Marked out by their heavy anime-style makeup and generally baggy clothes, the Toyoko Kids — a mix of permanent runaways and those seeking community, but all marginalized in one way or another — have emerged as a major presence in the area in recent years. Together, they have formed a unique youth subculture based around shared neglect, internet-driven popularity and a distinct fashion sense.</P>
+                    </div>
+                </div>
+            </div>
+            <div id="line"></div>
+            <div class="city1.1container container" data-aos="fade-left">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <img src="gellery/city1.4.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <h4>Taylor Swift slays her Tokyo era</h4>
+                        <P>First, there was a record-breaking night at the Grammys, one in which she also announced a new album. Then, a last-minute flight across the Pacific (one that you’d better not be tracking) and a wintery welcome to Tokyo after the capital’s first blizzard of the season days prior. Despite it all, the 34-year-old pop superstar looked rested and relaxed as the current leg of her global Eras Tour got off to a rollicking start at the sold-out Tokyo Dome on Wednesday.
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="line"></div>
+        <section class="citymap">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662975.6753610712!2d138.4502830757399!3d35.504293906948554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C%20Japan!5e0!3m2!1sen!2s!4v1707489103037!5m2!1sen!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row foot">
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box  ">
+                <h2 class="mb-3">Explore the DNBC</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam repellendus sunt
+                  praesentium
+                  aspernatur iure molestias.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box mx-5">
+                <h2>World</h2>
+                <ul>
+                  <li><a href="city4.html">China</a></li>
+                  <li><a href="latestnews.html">Asia</a></li>
+                  <li><a href="city3.html">Europe</a></li>
+                  <li><a href="city5.html">United Kingdom</a></li>
+                  <li><a href="city2.html">America</a></li>
+                  <li><a href="city1.html">Middle East</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box ">
+                <h2>DNBC Details</h2>
+                <ul>
+                  <li><a href="../about.html">About us</a></li>
+                  <li><a href="../faq.html">FAQ</a></li>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../index.html">News</a></li>
+                  <li><a href="../feedback.html">Feedback</a></li>
+                  <li><a href="../contact.html">Contact us</a></li>
+  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box ">
+                <h2>Join Us</h2>
+                <button type="button" class="btn mt-4 watch px-3">
+                  <a href="">Watch TV Here</a>
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright © 2024 DNBC. The DNBC is not responsible for the content of external sites
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+      offset: 200,
+      duration: 900
+    });
+    </script>
+</body>
+
+</html>

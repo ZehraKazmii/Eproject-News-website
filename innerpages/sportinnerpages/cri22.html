@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../inner-style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-expand-ms nav1">
+      <a href="#" class="navbar-brand  logo text-white">
+        <img src="../gellery/logo.png" alt="">
+      </a>
+      <a class="signin" href=""><i class="fa-solid fa-user"></i> Sign in</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn" aria-controls="btn"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="navline"></div>
+      <div class="collapse navbar-collapse mx-5 mx-5 navmenu1 " id="btn">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link text-dark px-3 navitem1" style="margin-left: 20px;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../index.html" class="nav-link text-dark px-3 navitem2">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../about.html" class="nav-link text-dark px-3 navitem3 ">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../contact.html" class="nav-link text-dark px-3 navitem4">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../feedback.html" class="nav-link text-dark px-3 navitem6">FeedBack</a>
+          </li>
+          <li class="nav-item">
+            <a href="../../faq.html" class="nav-link text-dark px-3 navitem5">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <input class="form-control search" type="text" placeholder="Search" aria-label="Disabled input example" disabled>
+          </li>
+          <li class="nav-item">
+            <span class="bell bell-btn"><i class="fa fa-bell bellicon" aria-hidden="true"></i></span> 
+          </li>
+           
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-expand-md nav2">
+      <a href="#" class="navbar-brand news-logo text-white">NEWS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a href="../business.html" class="nav-link text-white navmenu2 navitem ">Bussiness</a>
+          </li>
+          <li class="nav-item">
+            <a href="../latestnews.html" class="nav-link text-white navmenu2 navitem">Today in the World</a>
+          </li>
+          <li class="nav-item">
+            <a href="../sport.html" class="nav-link text-white navmenu2 navitem">Sport</a>
+          </li>
+          <li class="nav-item">
+            <a href="../entertainment.html" class="nav-link text-white navmenu2 navitem ">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a href="../politics.html" class="nav-link text-white navmenu2 navitem ">Politics</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city1.html" class="nav-link text-white navmenu2 navitem ">Tokyo</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city5.html" class="nav-link text-white navmenu2 navitem ">England</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city3.html" class="nav-link text-white navmenu2 navitem ">Paris</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city4.html" class="nav-link text-white navmenu2 navitem ">Shanghai</a>
+          </li>
+          <li class="nav-item">
+            <a href="../city2.html" class="nav-link text-white navmenu2 navitem ">Sao Paulo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    <main>
+      <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+      <span class="close-btn material-symbols-rounded">X</span>
+      <div class="subscontainer">
+        <div class="subsmain-card">
+          <input type="checkbox" id="chk1" aria-hidden="true">
+
+          <div class="plane">
+            <label class="subtittle" for="chk1" aria-hidden="true">BASIC</label>
+            <div class="dealrow">
+              <div class="price-details">
+                <span class="price">$19</span>
+              </div>
+              <ul class="subfeatures">
+                <li><i class="fas fa-check"></i><span>100 GB Premium Bandwidth</span></li>
+                <li><i class="fas fa-check"></i><span>FREE 50+ Installation Scripts</span></li>
+                <li><i class="fas fa-check"></i><span>One FREE Domain Registration </span></li>
+                <li><i class="fas fa-check"></i><span>Unlimited Email Accounts </span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment">
+            <form class="subsform" id="subscript">
+              <label class="pay" for="chk1" aria-hidden="true">Subscribe</label>
+              <input class="subsinput" type="text" name="cardholder" placeholder="Cardholder Name" required>
+              <input class="subsinput" type="text" name="cardnumber" placeholder="Card Number" required>
+              <input class="subsinput" type="date" name="expirydate" placeholder="Expiry Date" required>
+              <input class="purchase" type="submit" name="submit" value="Purchase">
+            </form>
+          </div>
+        </div>
+        <div class="subsmain-card">
+          <input type="checkbox" id="chk2" aria-hidden="true">
+
+          <div class="plane">
+            <label class="subtittle" for="chk2" aria-hidden="true">PREMIUM</label>
+            <div class="dealrow">
+              <div class="price-details">
+                <span class="price">$29</span>
+              </div>
+              <ul class="subfeatures">
+                <li><i class="fas fa-check"></i><span>Unlimited GB Premium </span></li>
+                <li><i class="fas fa-check"></i><span>FREE 200+ Installation Scripts </span></li>
+                <li><i class="fas fa-check"></i><span>Five FREE Domain Registration</span></li>
+                <li><i class="fas fa-check"></i><span>Unlimited Email Accounts </span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="payment">
+            <form class="subsform" id="subscript">
+              <label class="pay" for="chk2" aria-hidden="true">Subscribe</label>
+              <input class="subsinput" type="text" name="cardholder" placeholder="Cardholder Name" required>
+              <input class="subsinput" type="text" name="cardnumber" placeholder="Card Number" required>
+              <input class="subsinput" type="date" name="expirydate" placeholder="Expiry Date" required>
+              <input class="purchase" type="submit" name="submit" value="Purchase">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+        <section class="section-padding">
+            <div class="innerpage-container">
+                <div class="innerpage-info">
+                    <div class="innerpage-head">
+                        <h2>Mithali Raj predicts bright future for women's cricket in India.</h2>
+                        <span class="time"><i class="fa-regular fa-clock clock "></i>3 days ago</span>
+                    </div>
+                    <figure class="figure">
+                        <img src="../gellery/cri22.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption">Mithali Raj scored more than 10,000 international runs for India
+                        </figcaption>
+                    </figure>
+                    <div class="innerpage-text">
+                        <h4>The introduction of a women's Indian Premier League (IPL) will lead to a "big-time" change in women's cricket in India and beyond, says former India captain Mithali Raj.</h4>
+                        <p>India are in England for a multi-format white-ball series which includes three Twenty20 internationals and finishes with three one-day internationals, with the final one at Lord's.
+
+                            The women's game continues to grow, with record attendances at every ground in The Hundred, which finished earlier this month.</p>
+                        <p>Speaking on a new documentary series called One Billion to One, The Great Indian Cricket Dream, which is due to be screened later this month on the BBC World News Channel and iPlayer, Raj believes the positive changes will only continue.</p>
+                        <p>"With the Women's IPL announced for next year [March 2023], clearly things are going to change big time for women's cricket," said Raj, who is India's most decorated female cricketer.</p>
+                        <p>"Now is the time for girls to take up the sport as a profession because it is viable and there is money involved, and now it's not in obscurity - there is so much attached to women's cricket.
+
+                            "There is fame and glory, and with social media, everything is amplified. Not many girls had a female role model in cricket until now."
+                            
+                            Raj, who played 12 Tests, 232 ODIs and 89 T20s for India, says the route into the women's game is much clearer in India than when she started playing in the early 1990s.
+                            
+                            "For my grandparents, it was difficult for them to process that their granddaughter was getting into sport, and a sport which is a rough sport," said Raj.</p>
+                     
+                    </div>
+                </div>
+                <div class="innerpage-card">
+                    <h4>Top Stories</h4>
+                    <div class="innerpage-sidecard">
+                        <div class="side-cards">
+                            <div class="card">
+                                <a href="cri20.html"><img src="../gellery/cri20.jpg" class="card-img-top " alt="..."></a>
+                                <div class=" side-text card-body">
+                                    <p class="card-text"><a class="homebusi-text" href="cri20.html">Future tour dates: Details of forthcoming international series</a></p>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <a href="cri22.html"><img src="../gellery/cri22.jpg" class="card-img-top" alt="..."></a>
+                                <div class=" side-text card-body">
+                                    <p class="card-text"><a class="homebusi-text" href="cri22.html">Mithali Raj predicts bright future for women's cricket in India.</a></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="cri23.html"><img src="../gellery/cri23.jpg" class="card-img-top" alt="..."></a>
+                                <div class=" side-text card-body">
+                                    <p class="card-text"><a class="homebusi-text" href="cri23.html">England's overlooked 2005 Ashes win: 'Everyone thought we were the Wags' </a></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="cri24.html"><img src="../gellery/cri24.jpg" class="card-img-top" alt="..."></a>
+                                <div class=" side-text card-body">
+                                    <p class="card-text"><a class="homebusi-text" href="cri24.html">Hot wheels - how wheelchair tennis became a Grand Slam draw</a></p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row foot">
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box  ">
+                <h2 class="mb-3">Explore the DNBC</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam repellendus sunt
+                  praesentium
+                  aspernatur iure molestias.</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box mx-5">
+                <h2>World</h2>
+                <ul>
+                  <li><a href="../city4.html">China</a></li>
+                  <li><a href="../latestnews.html">Asia</a></li>
+                  <li><a href="../city3.html">Europe</a></li>
+                  <li><a href="../city5.html">United Kingdom</a></li>
+                  <li><a href="../city2.html">America</a></li>
+                  <li><a href="../city1.html">Middle East</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box ">
+                <h2>DNBC Details</h2>
+                <ul>
+                  <li><a href="../../about.html">About us</a></li>
+                  <li><a href="../../faq.html">FAQ</a></li>
+                  <li><a href="../../index.html">Home</a></li>
+                  <li><a href="../../index.html">News</a></li>
+                  <li><a href="../../feedback.html">Feedback</a></li>
+                  <li><a href="../../contact.html">Contact us</a></li>
+  
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="foot-box ">
+                <h2>Join Us</h2>
+                <button type="button" class="btn mt-4 watch px-3">
+                  <a href="">Watch TV Here</a>
+                </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        Copyright © 2024 DNBC. The DNBC is not responsible for the content of external sites
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
